@@ -4,6 +4,7 @@ import { selectUser } from '../features/userSlice'
 import { auth } from '../firebase'
 import '../styles/Profile.css'
 import Nav from './Nav'
+import Plans from './Plans'
 
 function Profile() {
 
@@ -23,7 +24,7 @@ function Profile() {
 
                         <div className="profile__plans">
                             <h3>Plans</h3>
-                            
+                            <Plans />
                             <button onClick={()=>auth.signOut()} className="profile__signout">Sign Out</button>
                         </div>
                     </div>
